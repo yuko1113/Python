@@ -32,3 +32,12 @@ try:
     print(d * 2)
 except ValueError:
     print('それは数字ではありません')
+
+import datetime
+print(datetime.date.today())
+
+def triangle_area(base, height):
+    area = base * height / 2
+    return area
+
+print(triangle_area(5, 3))
