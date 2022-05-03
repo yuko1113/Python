@@ -41,3 +41,34 @@ def triangle_area(base, height):
     return area
 
 print(triangle_area(5, 3))
+
+print(int(5))
+
+sample = [1, 2, 3, 4, 5]
+print(tuple(sample))
+
+drinklist = ['coffee', 'tea', 'water']
+print(list(enumerate(drinklist)))
+
+for i, drink in enumerate(drinklist):
+    print(i, drink)
+
+meallist = ['steak', 'salad', 'dessert']
+print(list(zip(meallist, drinklist)))
+
+dict_a = dict(steak=1, salad=2, dessert=3)
+print(dict_a)
+
+def article(title, number=1, content='content'):
+    content = 'default content'
+    print(title, end=' ')
+    print(number, end=' ')
+    print(content)
+
+article('Python tutorial', content='Python Love')
+
+def double(x):
+    return x * 2
+fruitlist = ['kiwi', 'papaya', 'mango']
+
+print(list(map(double, fruitlist)))
